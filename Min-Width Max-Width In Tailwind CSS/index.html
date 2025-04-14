@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Width Examples</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="p-6 space-y-6 font-sans bg-gray-100 text-gray-800">
+    <h1 class="text-2xl font-bold mb-4">
+      Tailwind CSS Width, Min-Width, Max-Width
+    </h1>
+
+    <!-- 1. Width Example -->
+    <div class="w-32 bg-blue-200 p-2 rounded">Width: 8rem (w-32)</div>
+
+    <!-- 2. Full Width -->
+    <div class="w-full bg-green-200 p-2 rounded">Width: 100% (w-full)</div>
+
+    <!-- 3. Min Width -->
+    <div class="min-w-[200px] bg-yellow-200 p-2 rounded">Min Width: 200px</div>
+
+    <!-- 4. Max Width -->
+    <div class="max-w-md bg-purple-200 p-2 rounded">Max Width: md (28rem)</div>
+
+    <!-- 5. Custom Width -->
+    <div class="w-[500px] bg-red-200 p-2 rounded">Custom Width: 500px</div>
+
+    <!-- 6. Width in Percentage -->
+    <div class="w-[60%] bg-teal-200 p-2 rounded">Width: 60%</div>
+
+    <!-- 7. Hover Width Change -->
+    <div
+      class="w-32 hover:w-64 transition-all duration-500 bg-indigo-200 p-2 rounded"
+    >
+      Hover to change width (w-32 → w-64)
+    </div>
+  </body>
+</html>
