@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Margin and Padding</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="p-6 space-y-6 font-sans bg-gray-100 text-gray-800">
+    <h1 class="text-2xl font-bold mb-4">
+      Tailwind CSS Margin & Padding Examples
+    </h1>
+
+    <!-- 1. Margin and Padding on All Sides -->
+    <div class="m-4 p-4 bg-blue-200 rounded">
+      Margin and Padding on all sides (m-4 p-4)
+    </div>
+
+    <!-- 2. Vertical and Horizontal Spacing -->
+    <div class="mx-6 my-4 px-8 py-2 bg-green-200 rounded">
+      Horizontal & Vertical Spacing (mx-6 my-4 px-8 py-2)
+    </div>
+
+    <!-- 3. Single Side Margin and Padding -->
+    <div class="mt-8 ml-4 pl-6 pt-2 bg-yellow-200 rounded">
+      Margin Top & Left, Padding Left & Top (mt-8 ml-4 pl-6 pt-2)
+    </div>
+
+    <!-- 4. Padding and Margin on <span> -->
+    <span class="inline-block m-2 p-2 bg-purple-200 rounded">
+      Styled Span with Padding and Margin
+    </span>
+
+    <!-- 5. Negative Margin Example -->
+    <div class="mt-4 bg-red-200 p-4 rounded">
+      <div class="-mt-4 bg-red-400 p-2 text-white rounded">
+        Pulled up using -mt-4
+      </div>
+    </div>
+  </body>
+</html>
