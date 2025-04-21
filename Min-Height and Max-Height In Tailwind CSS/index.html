@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Height Examples</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="p-6 space-y-6 bg-gray-100 text-gray-800">
+    <h1 class="text-2xl font-bold mb-4">Tailwind CSS Height Examples</h1>
+
+    <!-- 1. Fixed Height -->
+    <div class="h-32 bg-blue-200 p-2 rounded">Fixed Height (h-32 → 8rem)</div>
+
+    <!-- 2. Full Screen Height -->
+    <div class="h-screen bg-green-200 p-2 rounded">
+      Full Screen Height (h-screen)
+    </div>
+
+    <!-- 3. Height in % -->
+    <div class="h-64 bg-gray-200 p-4">
+      <div class="h-1/2 bg-yellow-400 rounded">
+        50% Height of Parent (h-1/2)
+      </div>
+    </div>
+
+    <!-- 4. Min Height -->
+    <div class="min-h-[200px] bg-purple-200 p-2 rounded">Min Height: 200px</div>
+
+    <!-- 5. Max Height -->
+    <div class="max-h-40 overflow-auto bg-pink-200 p-2 rounded">
+      Max Height: h-40 with scroll if needed<br />
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec dui ac
+      nulla...
+    </div>
+
+    <!-- 6. Height with Hover -->
+    <div
+      class="h-24 hover:h-40 transition-all duration-500 bg-indigo-200 p-2 rounded"
+    >
+      Hover to increase height (h-24 → h-40)
+    </div>
+  </body>
+</html>
