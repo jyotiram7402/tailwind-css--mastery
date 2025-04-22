@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS Size Classes</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="p-6 space-y-6 bg-gray-100 text-gray-800">
+    <h1 class="text-2xl font-bold">Tailwind CSS Size Examples</h1>
+
+    <!-- Fixed Size -->
+    <div class="w-32 h-32 bg-blue-300 rounded">Fixed Size (8rem × 8rem)</div>
+
+    <!-- Size in Percentage -->
+    <div class="w-full h-24 bg-green-300 rounded">Full Width</div>
+    <div class="w-1/2 h-16 bg-yellow-300 rounded">Half Width</div>
+
+    <!-- Size with Hover -->
+    <div
+      class="w-32 h-24 hover:w-64 hover:h-40 transition-all duration-500 bg-pink-400 rounded"
+    >
+      Hover Me to Resize
+    </div>
+
+    <!-- Height with Hover -->
+    <div
+      class="h-20 hover:h-40 bg-indigo-400 transition-all duration-500 rounded"
+    >
+      Hover to increase height
+    </div>
+  </body>
+</html>
