@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS Positioning</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-gray-100 p-10 space-y-10 text-gray-800">
+    <h1 class="text-2xl font-bold">Tailwind CSS: Position Examples</h1>
+
+    <!-- Relative Position -->
+    <div class="relative bg-blue-200 p-4 rounded">
+      This box is <strong>relative</strong> positioned.
+      <div class="absolute top-2 right-2 bg-red-400 text-white p-2 rounded">
+        Absolutely positioned inside
+      </div>
+    </div>
+
+    <!-- Inset with absolute -->
+    <div class="relative h-32 bg-green-200 rounded">
+      <div class="absolute inset-4 bg-green-500 text-white p-2 rounded">
+        Inset-4 on all sides
+      </div>
+    </div>
+
+    <!-- Fixed Position -->
+    <div class="fixed bottom-4 right-4 bg-pink-600 text-white p-3 rounded">
+      I'm fixed to bottom right
+    </div>
+  </body>
+</html>
