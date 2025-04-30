@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Filters</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 space-y-10 p-6">
+    <!-- Blur -->
+    <div class="relative">
+      <img
+        src="https://source.unsplash.com/random/800x400"
+        class="blur-md w-full rounded"
+      />
+      <p class="absolute top-4 left-4 text-white text-xl font-bold">
+        Blurred Image
+      </p>
+    </div>
+
+    <!-- Brightness -->
+    <img
+      src="https://source.unsplash.com/random/800x400"
+      class="brightness-50 w-full rounded"
+    />
+
+    <!-- Contrast -->
+    <img
+      src="https://source.unsplash.com/random/800x400"
+      class="contrast-150 w-full rounded"
+    />
+
+    <!-- Invert -->
+    <img
+      src="https://source.unsplash.com/random/800x400"
+      class="invert w-full rounded"
+    />
+
+    <!-- Grayscale -->
+    <img
+      src="https://source.unsplash.com/random/800x400"
+      class="grayscale w-full rounded"
+    />
+
+    <!-- Hue Rotate -->
+    <img
+      src="https://source.unsplash.com/random/800x400"
+      class="hue-rotate-90 w-full rounded"
+    />
+
+    <!-- Filter None -->
+    <img
+      src="https://source.unsplash.com/random/800x400"
+      class="filter-none w-full rounded"
+    />
+
+    <!-- Display None vs Visibility Hidden -->
+    <div class="p-4 space-y-2">
+      <div class="hidden bg-red-500 text-white p-2">
+        This is hidden (display: none)
+      </div>
+      <div class="invisible bg-green-500 text-white p-2">
+        This is invisible (visibility: hidden)
+      </div>
+      <div class="bg-blue-500 text-white p-2">This is visible</div>
+    </div>
+  </body>
+</html>
