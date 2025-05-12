@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Flex Examples</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="p-6 space-y-10 bg-gray-50">
+    <!-- Row and Column layout -->
+    <div class="flex gap-4 bg-gray-100 p-4">
+      <div class="bg-blue-400 p-4">Row Item 1</div>
+      <div class="bg-blue-500 p-4">Row Item 2</div>
+      <div class="bg-blue-600 p-4">Row Item 3</div>
+    </div>
+
+    <div class="flex flex-col gap-4 bg-gray-100 p-4">
+      <div class="bg-green-400 p-4">Col Item 1</div>
+      <div class="bg-green-500 p-4">Col Item 2</div>
+      <div class="bg-green-600 p-4">Col Item 3</div>
+    </div>
+
+    <!-- Reverse Order -->
+    <div class="flex flex-row-reverse gap-4 bg-gray-100 p-4">
+      <div class="bg-purple-400 p-4">1</div>
+      <div class="bg-purple-500 p-4">2</div>
+      <div class="bg-purple-600 p-4">3</div>
+    </div>
+
+    <div class="flex flex-col-reverse gap-4 bg-gray-100 p-4">
+      <div class="bg-yellow-400 p-4">A</div>
+      <div class="bg-yellow-500 p-4">B</div>
+      <div class="bg-yellow-600 p-4">C</div>
+    </div>
+
+    <!-- Centered item -->
+    <div class="flex items-center justify-center h-40 bg-gray-200">
+      <div class="bg-red-500 text-white px-6 py-3">Centered</div>
+    </div>
+
+    <!-- Wrap Items -->
+    <div class="flex flex-wrap gap-4 bg-gray-100 p-4">
+      <div class="bg-pink-400 p-4 w-40">Wrap 1</div>
+      <div class="bg-pink-500 p-4 w-40">Wrap 2</div>
+      <div class="bg-pink-600 p-4 w-40">Wrap 3</div>
+      <div class="bg-pink-700 p-4 w-40">Wrap 4</div>
+    </div>
+
+    <!-- Responsive Order -->
+    <div class="flex flex-wrap gap-4 bg-gray-100 p-4">
+      <div class="bg-teal-400 p-4 order-3 sm:order-1">Item A</div>
+      <div class="bg-teal-500 p-4 order-2 sm:order-2">Item B</div>
+      <div class="bg-teal-600 p-4 order-1 sm:order-3">Item C</div>
+    </div>
+  </body>
+</html>
