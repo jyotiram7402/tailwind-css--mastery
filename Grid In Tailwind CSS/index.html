@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tailwind Grid Examples</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="p-6 space-y-10 bg-gray-50">
+    <!-- Make Grid -->
+    <div class="grid grid-cols-3 gap-4 bg-gray-100 p-4">
+      <div class="bg-blue-400 p-4">1</div>
+      <div class="bg-blue-500 p-4">2</div>
+      <div class="bg-blue-600 p-4">3</div>
+    </div>
+
+    <!-- Grid Columns -->
+    <div class="grid grid-cols-4 gap-2 bg-gray-100 p-4">
+      <div class="bg-green-400 p-2">1</div>
+      <div class="bg-green-500 p-2">2</div>
+      <div class="bg-green-600 p-2">3</div>
+      <div class="bg-green-700 p-2">4</div>
+    </div>
+
+    <!-- Grid Rows -->
+    <div class="grid grid-rows-3 gap-2 bg-gray-100 p-4 mt-4 h-48">
+      <div class="bg-pink-400 p-2">Row 1</div>
+      <div class="bg-pink-500 p-2">Row 2</div>
+      <div class="bg-pink-600 p-2">Row 3</div>
+    </div>
+
+    <!-- col-span -->
+    <div class="grid grid-cols-4 gap-4 bg-gray-100 p-4">
+      <div class="bg-purple-400 p-4 col-span-2">Span 2</div>
+      <div class="bg-purple-500 p-4">Item</div>
+      <div class="bg-purple-600 p-4">Item</div>
+    </div>
+
+    <!-- gap-x and gap-y -->
+    <div class="grid grid-cols-2 gap-x-8 gap-y-4 bg-gray-100 p-4">
+      <div class="bg-yellow-400 p-4">A</div>
+      <div class="bg-yellow-500 p-4">B</div>
+      <div class="bg-yellow-600 p-4">C</div>
+      <div class="bg-yellow-700 p-4">D</div>
+    </div>
+
+    <!-- Responsive Grid Columns -->
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 bg-gray-100 p-4"
+    >
+      <div class="bg-teal-400 p-4 text-white text-center">1</div>
+      <div class="bg-teal-500 p-4 text-white text-center">2</div>
+      <div class="bg-teal-600 p-4 text-white text-center">3</div>
+      <div class="bg-teal-700 p-4 text-white text-center">4</div>
+      <div class="bg-teal-800 p-4 text-white text-center">5</div>
+      <div class="bg-teal-900 p-4 text-white text-center">6</div>
+    </div>
+  </body>
+</html>
