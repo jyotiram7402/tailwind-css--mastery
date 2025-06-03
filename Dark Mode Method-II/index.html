@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Mode Toggle - Tailwind v4</title>
+
+    <!-- ✅ Correct CDN for Tailwind CSS v4 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- ✅ Enable darkMode as class (Tailwind v4 uses class by default) -->
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
+  </head>
+  <body
+    class="bg-white dark:bg-gray-900 text-black dark:text-white min-h-screen p-10 transition-all space-y-6"
+  >
+    <!-- Toggle Button -->
+    <button
+      onclick="document.documentElement.classList.toggle('dark')"
+      class="px-4 py-2 rounded bg-blue-600 text-white hover:bg-blue-700 transition"
+    >
+      Toggle Dark Mode
+    </button>
+
+    <!-- Example Box -->
+    <div class="bg-white dark:bg-gray-800 p-6 rounded shadow-md transition-all">
+      <h1 class="text-xl font-bold">Tailwind Dark Mode</h1>
+      <p>This section responds to the dark theme toggle.</p>
+    </div>
+
+    <!-- Extra Content -->
+    <div class="p-4 rounded bg-gray-200 dark:bg-gray-700">
+      <p>This is another block that shows theme change.</p>
+    </div>
+  </body>
+</html>
